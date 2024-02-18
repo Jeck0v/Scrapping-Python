@@ -29,3 +29,44 @@ titles = [a['title'] for a in soup.find_all('a', title = True)]
 pprint(titles)
 
 #============================================================================================
+#images = soup.find('section').find_all('img')
+#for images in images:
+        #print(images.get('src'))        #possible aussi avec images['src'] mais risque d'erreur si y a pas d'attribut src
+
+
+#for category in categories.children:   #1
+        #print(category.text.strip())
+
+
+#find = soup.find_all('article', class_="product_pod")
+#print(find)
+#aside = soup.find('aside')
+#side_categories = aside.find('div', class_='side_categories')
+#print(side_categories)
+
+
+
+#for child in aside.children:
+    #print(child.name)
+
+
+
+
+
+#print(soup.prettify())
+#parser 1 = lxml-xml (fichier de config / échange de donnée)
+#parser 2 = html.parser (  /!\ moins tolérant aux erreurs mais plus rapide)
+#parser 3 = html5lib (plus lent mais plus tolérant)
+
+
+
+
+
+#with open ('index.html', 'w') as f:        #créer un fichier html avec les infos récolté, dans ce cas là le code html de google.com
+    #f.write(response.text)
+
+#print (response.status_code)
+
+# .raise_for_status() pour relever les erreur
+# .status_code pour voir le code erreur
+
